@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Grid Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="entryForm">
+        <button onclick="startTest()">Start Game</button>
+    </div>
+    <div id="test" style="display:none;">
+        <div id="score">Score: 0</div>
+        <div id="grids">
+            <!-- 9 grids, each with an onclick handler -->
+            <div id="grid1" class="grid" onclick="selectGrid(1)"></div>
+            <div id="grid2" class="grid" onclick="selectGrid(2)"></div>
+            <div id="grid3" class="grid" onclick="selectGrid(3)"></div>
+            <div id="grid4" class="grid" onclick="selectGrid(4)"></div>
+            <div id="grid5" class="grid" onclick="selectGrid(5)"></div>
+            <div id="grid6" class="grid" onclick="selectGrid(6)"></div>
+            <div id="grid7" class="grid" onclick="selectGrid(7)"></div>
+            <div id="grid8" class="grid" onclick="selectGrid(8)"></div>
+            <div id="grid9" class="grid" onclick="selectGrid(9)"></div>
+        </div>
+        <div id="timer">03:00</div>
+        <button id="guessMore" onclick="makeGuess('more')">125 or more</button>
+        <button id="guessLess" onclick="makeGuess('less')">125 or less</button>
+    </div>
+    <div id="finalScore" style="display:none;">
+        <h1>Your Final Score: <span id="finalScoreValue"></span></h1>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
